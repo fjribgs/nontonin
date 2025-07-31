@@ -1,11 +1,12 @@
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
+import { Hero, AboutMe } from './components/Home'
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
+      <AboutMe />
     </>
   )
 }

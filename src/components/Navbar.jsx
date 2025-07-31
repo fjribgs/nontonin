@@ -3,7 +3,7 @@ import '../index.css'
 function Navbar() {
   return (
     <nav className="bg-[var(--primary5)] text-[var(--primary1)] flex 
-    place-content-between h-18 w-full p-9 sm:px-26 items-center">
+    place-content-between h-18 w-full p-9 sm:px-26 items-center fixed">
       <div id="navbar-left" className="font-bold text-2xl">fjribgs.</div>
       <div id="navbar-center" className="hidden sm:block justify-center">
         <ul className="flex gap-9">
