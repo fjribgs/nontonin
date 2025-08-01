@@ -16,7 +16,7 @@ function Hero() {
   }, [roles.length])
 
   return (
-    <div id="hero" className='bg-[var(--primary5)] h-220 sm:h-250 flex items-center 
+    <div id="hero" className='bg-[var(--primary5)] h-220 sm:h-260 flex items-center 
     place-content-between pl-9 sm:pl-25 sm:pr-25'>
       <div id="hero-left" className='z-10'>
         <img src={laios} alt="laios" className='size-48 rounded-3xl mb-7 block sm:hidden'/>
@@ -36,10 +36,13 @@ function Hero() {
         Budi</span>, I build responsive, user-friendly websites with clean 
         code and thoughtful design.</div>
 
-        <div id="button" className='flex'>
+        <div id="button"
+        className='flex'>
           <a id="my-resume" className='border-2 py-3 px-5 mt-5 ml-2 rounded-3xl 
           bg-[var(--primary3)] border-[var(--primary3)] text-[var(--primary1)]
-          hover:bg-[var(--primary5)] duration-150 ease-in'>My Resume</a>
+          hover:bg-[var(--primary5)] duration-150 ease-in' 
+          href='https://drive.google.com/file/d/1GMHL85_DdeYcSu6EDcPyoh2hj1n4u7Dp/view?usp=sharing'
+          target='_blank'>My Resume</a>
         </div>
       </div>
 
@@ -57,7 +60,11 @@ function Hero() {
 
 function AboutMe() {
   return (
-    <div id="about-me" className='h-400'></div>
+    <div id="about-me" className='h-220 bg-[var(--primary1)] justify-center items-center flex'>
+      <div id="title" className='font-bold text-7xl text-[var(--primary5)]'>
+        <span className='font-medium'>About</span> Me
+      </div>
+    </div>
   )
 }
 

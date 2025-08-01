@@ -1,6 +1,8 @@
 import '../index.css'
 import githubwhite from '../assets/github-white.svg'
+import githubdark from '../assets/github-dark.svg'
 import linkedinwhite from '../assets/linkedin-white.svg'
+import linkedindark from '../assets/linkedin-dark.svg'
 import laios from '../assets/laios.jpeg'
 
 function Navbar() {
@@ -17,10 +19,18 @@ function Navbar() {
         </ul>
       </div>
       <div id="navbar-right" className='flex gap-2 items-center'>
-        <a href="https://github.com/fjribgs" className=''><img src={githubwhite} alt="" 
-        className='size-6 lg:size-8'/></a>
-        <a href="https://linkedin.com/in/fajribagas" className=''><img src={linkedinwhite} alt="" 
-        className='size-6 lg:size-8'/></a>
+        <a href="https://github.com/fjribgs" target='_blank' className='group'>
+          <img src={githubwhite} alt="" className='size-6 lg:size-8 group-hover:hidden block
+          ease-in-out duration-150'/>
+          <img src={githubdark} alt="" className='size-6 lg:size-8 hidden group-hover:block
+          ease-in-out duration-150'/>
+        </a>
+        <a href="https://linkedin.com/in/fajribagas" target='_blank' className='group'>
+          <img src={linkedinwhite} alt="" className='size-6 lg:size-8 group-hover:hidden block
+          ease-in-out duration-150'/>
+          <img src={linkedindark} alt="" className='size-6 lg:size-8 hidden group-hover:block
+          ease-in-out duration-150'/>
+        </a>
         <div id="img" className='mt-7 ml-3'><img src={laios} alt="laios" className='rounded-4xl mb-7 
         hidden sm:block size-10'/></div>
       </div>
