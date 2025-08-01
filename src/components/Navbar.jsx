@@ -1,4 +1,6 @@
 import '../index.css'
+import githubwhite from '../assets/github-white.svg'
+import linkedinwhite from '../assets/linkedin-white.svg'
 
 function Navbar() {
   return (
@@ -12,8 +14,14 @@ function Navbar() {
           <li className='cursor-pointer duration-200 ease-in hover:font-bold'><a href="#">Contact</a></li>
         </ul>
       </div>
+      <div id="navbar-right" className='flex gap-2'>
+        <a href="#" className=''><img src={githubwhite} alt="" 
+        className='size-6 lg:size-8'/></a>
+        <a href="#" className=''><img src={linkedinwhite} alt="" 
+        className='size-6 lg:size-8'/></a>
+      </div>
     </nav>
   )
 }
 
-export default Navbar
+export default Navbar;
